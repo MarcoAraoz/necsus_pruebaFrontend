@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen de Desarrollador Front-End</title>
+    <style>
+        #myParagraph {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Examen de Desarrollador Front-End</h1>
+    <h2>Parte 2: Ejercicio Práctico</h2>
+    <h3>HTML | CSS |JS</h3>
+    <p id="myParagraph">• Crea una página web simple con un encabezado, un párrafo de texto y un botón. <br/> • Al hacer clic en el botón, cambia el color del fondo del párrafo de texto a otro color  diferente.</p>
+    <button onclick="changeColor()">Cambiar Color</button>
+
+    <script>
+        function changeColor() {
+            var paragraph = document.getElementById("myParagraph");
+            var colors = ["#ff6347", "#6495ed", "#ffd700", "#90ee90", "#ff69b4", "#d3d3d3", "#ff7f50", "#20b2aa", "#87cefa", "#778899"];
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            paragraph.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>
